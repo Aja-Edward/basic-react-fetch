@@ -1,0 +1,91 @@
+.nav-container {
+  width: 100%;
+  height: 70px;
+  padding: 3px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(154, 161, 163);
+}
+.nav-logo-container {
+  width: 10%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+.nav-logo-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.nav-log-text {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin-right: 30px;
+  color: #fff;
+}
+
+.nav-link li {
+  list-style-type: none;
+}
+
+.burgerlogo {
+  display: none;
+  justify-content: center;
+  font: 1.6rem;
+  color: #fff;
+  position: relative;
+  margin-right: 20px;
+}
+.burgerlogo .times {
+}
+
+.burgerlogo .bars {
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .nav-link {
+    position: absolute;
+    z-index: 3;
+    flex-direction: column;
+    top: 15%;
+    left: 0;
+    width: 70%;
+    background-color: rgb(49, 50, 52);
+    padding: 1.3rem 0;
+    height: 400px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    transition: 3.4s;
+  }
+
+  .burgerlogo {
+    display: block;
+  }
+  .nav-link li {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    transition: 1.5s;
+  }
+  .nav-link li:hover {
+    background-color: dodgerblue;
+  }
+
+  .nav-logo-container {
+    width: 90%;
+    flex-direction: column;
+  }
+}

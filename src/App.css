@@ -1,0 +1,26 @@
+.App {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  height: 100%;
+}
+
+.announcement-container {
+  margin-top: 0;
+  height: 50px;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: dodgerblue;
+}
+
+.announcement-container h1 {
+  font-size: 1.3rem;
+}
